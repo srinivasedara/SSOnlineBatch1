@@ -158,6 +158,31 @@ WebDriver Methods
 5. quit() - It will closes all the browser windows in a perticular session
 
 
+15 - Nov
+========
+
+6. getTitle() - It will return the title of a active webpage. Usually used to validate between the pages
+
+7. getCurrentUrl() - It will return the active page URL.
+
+Note: Usually the functionalities are validating either element or title of the page or URL of the page
+
+8. navigation Methods
+======================
+
+
+to(Url) - used to launch the web application like 
+
+forward()
+
+back()
+
+refresh()
+
+
+
+
+
 
 
 
