@@ -1,0 +1,175 @@
+class <className>
+{
+	variables & Methods
+}
+
+tags <tagname> </tagname>
+
+-- each tag will consists of attributes
+-- attributes consists of two types
+
+	1. Internal attributes
+	2. External attributes
+
+<html attributes> xxxxx </html>
+
+
+Locators
+==========
+
+-- The following are be used to identify the target web element/field in the webpages
+
+1. id
+2. name
+3. className
+4. tagname - is used to identify the dynamic webelement
+5. linkText
+6. partialLinktext
+7. xpath
+8. cssSelector
+
+
+WebDriver Methods
+==================
+
+1. get(String URL) - Used to launch the web application by declaring URL as an argument.
+
+2. findElement() -- It will return a webelement which is matching with the locator value passed as an argument
+
+Note 1: The locator value is matching with more than one element then, it will return the first element which identifies in the webpage
+
+Note 2: If no element is found with the locator value then it will throws "NoSuchElement Exception" - Unable to locate element
+
+ - include the waiting statement
+ - change the locator and value
+
+
+
+11-Nov
+=======
+
+xpath: It is one of the locator in selenium to identify the target element with notation
+
+-- We have two types of xpaths
+
+	1. Absolute xpath
+	2. Relative xpath
+
+Absolute Xpath: By usng this xpath identify the target element from the source element in the webpage by declaring tagnames
+
+/html/body/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div[1]/div/div[1]/div/div[1]/
+
+
+Relative Xpath- Directly focusing on the target element with the signature
+
+1. Single Attribute
+
+	.//tagName[@attribute='value']
+
+2. Multiple Attributes
+
+	.//tagName[@attribute1 = 'value'][@attribute2='value'] ....
+
+3. Replacing the tagName with Notation *
+
+	.//*[@attribute='value']
+
+Note: * represents any tagName
+
+4. text() method
+
+	.//tagName[text()='Complete value']
+
+12- Nov
+=========
+
+5. contains()
+
+	.//tagName[contains(@attribute,'partial value')]
+
+	.//tagName[contains(text(),'partial value')]
+
+
+//*[text()='Create an account'] --- 4 
+
+(//*[text()='Create an account'])[2]
+
+(//*[contains(text(),'Create')])[2]
+
+(//*[contains(text(),'account')])[2]
+
+
+6. starts-with()
+
+	.//tagName[starts-with(@attribute,'starting value of an attribute')]
+
+	.//tagName[starts-with(text(),'starting value of an attribute')]
+
+7. OR & AND
+
+	.//tagName[@attribute1='value' or @attriute2='value']
+
+	.//tagName[@attribute1='value' and @attriute2='value']
+
+
+
+CSS Selector
+==============
+1. ID attribute
+
+//tagName[@id='value']
+
+<tagname><#><value> -- input#firstName
+
+2. class attribute
+
+<tagname><.><value> --- input.VfPpkd-muHVFf-bMcfAe
+
+3. Name attribute
+
+<tagname>[name='value']--- input[name='firstName']
+
+4. Prefix value
+
+<tagName>[attribute^='prefix value'] --- input[id^='first']
+
+5. Suffix Value
+
+<tagName>[attribute$='suffix value'] --- input[id$='name']
+
+6. substring value
+
+<tagName>[attribute*='substring value'] --- input[id*='firstN']
+
+13 Nov
+========
+
+WebDriver Methods
+====================
+
+1. get(String URL) - Used to launch the web application by passing the URL as an argument
+
+2. findElement(Locator) - it is returning a webelement which is matching to the locator information
+
+3. findElements(Locator) - it will return the List of webelements
+
+4. close() - It will close the single browser window
+
+5. quit() - It will closes all the browser windows in a perticular session
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
