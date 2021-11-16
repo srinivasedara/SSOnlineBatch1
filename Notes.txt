@@ -170,7 +170,6 @@ Note: Usually the functionalities are validating either element or title of the 
 8. navigation Methods
 ======================
 
-
 to(Url) - used to launch the web application like 
 
 forward()
@@ -178,6 +177,26 @@ forward()
 back()
 
 refresh()
+
+16 - Nov
+===========
+
+9. how to handle the cookies
+================================
+
+Cookie - Cookie is a special type of file which is stored in the browser. It has the server and application information
+
+CookieName, value, domain, path, expire, secure
+
+Q) what are the different wait statements in selenium?
+
+java - Thread.sleep(milliseconds);
+
+ImplicitWait
+
+ExplicitWait
+
+FluentWait
 
 
 

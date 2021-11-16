@@ -22,9 +22,7 @@ public class NavigationDemo {
 		
 		driver.navigate().forward();
 		
-		driver.navigate().refresh();
-		
-		
+		driver.navigate().refresh();	
 		
 	}
 
