@@ -199,6 +199,46 @@ ExplicitWait
 FluentWait
 
 
+10. How to handle alerts?
+==============================
+Alerts are be two types
+
+1. Web based alert
+
+2. window based alert
+
+Note1: Defaultly in selenium we can handle only web based alerts with an Alert interface Methods
+
+Note2: To handle window based alerts we can use third party tools or Robot class from Java
+
+Alert Interface methods
+======
+
+1. getText() - Used to take the message on the alert
+
+2. accept() - Used to click on the "OK" button
+
+3. dismiss() - Used to click on the "CANCEL" button
+
+4. refresh()
+
+Robot Class  - https://docs.oracle.com/javase/7/docs/api/
+============
+
+-- The actual usage of Robot class is to automate the keyboard keys and Mouse actions
+
+KeyPress()
+KeyRelease()
+
+
+Q) How to handle the multiple windows?
+
+Q) How to handle the frames?
+
+
+
+
+
 
 
 
