@@ -233,27 +233,76 @@ KeyRelease()
 
 Q) How to handle the multiple windows?
 
+-- Whenever the new pages are opened in either separate window or tab, User need to switch the cursor between the windows/tabs to automate the respective page elements
+
+-- Each window has it's unique id value and it was changing the from session to session
+
+-- To take the corresponding window id value user can use the following methods
+
+1. getWindowHandle() - it will return the single/active window id attribute value
+
+2. getWindowHandles() - it will return all the window id attribute values from a session
+
+Note - The target window identification can be done by either by element or title or url of the respective page on window
+
 Q) How to handle the frames?
 
+-- The frame is nothing but the nested page ( page inside a page)
 
+-- The frames are implemented at source code by <frame/iframe> tag
 
+Note:If a page has frames, the elements inside the frames are not identified until the user switches to the respective frame
 
+-- To switch the cursor to the respective page we can pass either name or id attribute value
 
+frame(String) // id or name
 
+frame(int)
 
+frame(WebElement)
 
+defaultContent()
 
+parentFrame()
 
+Q) How to handle the keyword and mouse operations in selenium?
 
+-- Actions class can be used to automate/handle the keyboard and mouse operation on the browser
 
+Note: Every actions class statement must be ended with perform() method
 
+Note: If user need to perform two actions in a single statement, those two actions can set as single action with the build() method
 
+Mouse actions
+============
 
+1. moveToElement(WebElement)
 
+2. moveToElement(WebElement, int x, int y)
 
+3. moveByOffset(int x, int y)
 
+4. clickAndHold(WebElement)
 
+5. release(WebElement)
 
+6. dragAndDrop(WebElement source, WebElement target)
 
+7. dragAndDropBy(WebElement source, int x, int y)
+
+8. contextClick(WebElement) - right click
+
+9. doubleClick(WebElement)
+
+10. click(WebElement)
+
+Keyboard actions
+=================
+
+1. sendKeys()
+
+2. keyDown()
+
+3. keyUp()
 
 
