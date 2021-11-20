@@ -306,3 +306,34 @@ Keyboard actions
 3. keyUp()
 
 
+Q) How to Select the values from dropdown?
+
+-- To select the value(s) from dropdown in Selenium, we have to use the "Select" class
+
+-- Usually the dropdown has two levels
+
+	1. Single selection dropdown
+	2. Multi selection dropdown
+
+-- The select class has the following methods:
+
+selectByVisibleText();
+selectByIndex();
+selectByValue();
+
+-- The above methods can be used to select the value from the dropdown
+
+deSelectByVisibleText();
+deSelectByIndex();
+deSelectByValue();
+deselectAll();
+getAllSelectedOptions()
+getFirstSelectedOption() -- MAY, FEB, DEC
+
+-- The above methods can be used only if the dropdown has Multiple selection
+
+isMultiple() -- it will return boolean value which is used to validate the dropdown is either single selection or multiple selection
+
+getOptions(); - It will return the list of all options from the dropdown
+
+
