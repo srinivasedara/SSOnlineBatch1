@@ -337,3 +337,44 @@ isMultiple() -- it will return boolean value which is used to validate the dropd
 getOptions(); - It will return the list of all options from the dropdown
 
 
+
+Verify the login functionalities
+
+username	password	expected
+
+valid		valid		Homepage
+valid		invalid
+invalid		valid
+invalid		invalid
+blank		valid
+blank		invalid
+valid		blank
+invalid		blank
+blank		blank
+
+
+-- Apache POI
+
+.xls 97
+
+.xlsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
