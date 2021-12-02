@@ -355,26 +355,32 @@ blank		blank
 
 -- Apache POI
 
-.xls 97
+.xls 97 -- HSSFWorkbook, HSSFSheet, HSSFRow, HSSFColumn
 
-.xlsx
-
-
+.xlsx --- XSSFWorkbook, XSSFSheet, XSSFRow, XSSFColumn
 
 
 
+Framework
+=========
+
+-- It is a predefined structure based on that user can implement the script
 
 
+TestNG - Test NextGeneration
+========
+
+-- TestNG is available as a plugin to editor
+
+-- It is implemented with the reference of JUnit and Nunit frameworks corresponding to the Java and .net programming languages
 
 
+		Java					TestNG
 
+1. Implementing as class			Implementing as class
 
+2. Java class must has main() method		TestNG class must be executes based on the Annotations
+	to execute the class
 
-
-
-
-
-
-
-
+-- @Test annotated methods can have main functionlaity
 
